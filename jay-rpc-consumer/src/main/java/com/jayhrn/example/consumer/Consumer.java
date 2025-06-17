@@ -1,7 +1,8 @@
 package com.jayhrn.example.consumer;
 
-import com.jayhrn.jayrpc.config.RpcConfig;
-import com.jayhrn.jayrpc.utils.ConfigUtils;
+import com.jayhrn.example.model.User;
+import com.jayhrn.example.service.UserService;
+import com.jayhrn.jayrpc.proxy.ServiceProxyFactory;
 
 /**
  * 服务消费者示例
@@ -12,7 +13,21 @@ import com.jayhrn.jayrpc.utils.ConfigUtils;
  */
 public class Consumer {
     public static void main(String[] args) {
-        RpcConfig rpcConfig = ConfigUtils.loadConfig(RpcConfig.class, "rpc");
-        System.out.println(rpcConfig);
+//        RpcConfig rpcConfig = ConfigUtils.loadConfig(RpcConfig.class, "rpc");
+//        System.out.println(rpcConfig);
+        // 动态代理
+        UserService userService = ServiceProxyFactory.getProxy(UserService.class);
+        User user = new User();
+        user.setName("JayHrn");
+        // 调用
+        User newUser = userService.getUser(user);
+        if (newUser != null) {
+            System.out.println(newUser.getName());
+        } else {
+            System.out.println("user == null");
+        }
+        // 测试Mock输出，如果number=0说明调用了MockServiceProxy模拟服务代理，如果为1调用的默认实现的真实服务
+        long number = userService.getNumber();
+        System.out.println(number);
     }
 }
