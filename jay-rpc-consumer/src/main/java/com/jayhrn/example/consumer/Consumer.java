@@ -14,8 +14,6 @@ import com.jayhrn.jayrpc.proxy.ServiceProxyFactory;
  */
 public class Consumer {
     public static void main(String[] args) {
-//        RpcConfig rpcConfig = ConfigUtils.loadConfig(RpcConfig.class, "rpc");
-//        System.out.println(rpcConfig);
         // 服务消费者初始化
         RpcApplication.init();
         // 动态代理

@@ -15,10 +15,11 @@
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/io.vertx/vertx-core -->
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-core</artifactId>
-            <version>5.0.0</version>
+            <version>4.5.15</version>
         </dependency>
         <dependency>
             <groupId>cn.hutool</groupId>
@@ -57,10 +58,18 @@
             <artifactId>kryo</artifactId>
             <version>5.6.2</version>
         </dependency>
+        <!--   注册中心     -->
+        <!-- https://mvnrepository.com/artifact/io.etcd/jetcd-core -->
+        <dependency>
+            <groupId>io.etcd</groupId>
+            <artifactId>jetcd-core</artifactId>
+            <version>0.8.5</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
+            <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
