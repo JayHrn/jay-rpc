@@ -8,8 +8,7 @@ import com.jayhrn.jayrpc.model.ServiceMetaInfo;
 import com.jayhrn.jayrpc.registry.LocalRegistry;
 import com.jayhrn.jayrpc.registry.Registry;
 import com.jayhrn.jayrpc.registry.RegistryFactory;
-import com.jayhrn.jayrpc.server.HttpServer;
-import com.jayhrn.jayrpc.server.VertxHttpServer;
+import com.jayhrn.jayrpc.server.tcp.VertxTcpServer;
 
 /**
  * 服务提供者示例
@@ -49,7 +48,11 @@ public class Provider {
         }
 
         // 启动 web 服务
-        HttpServer httpServer = new VertxHttpServer();
-        httpServer.doStart(rpcConfig.getServerPort());
+//        HttpServer httpServer = new VertxHttpServer();
+//        httpServer.doStart(rpcConfig.getServerPort());
+
+        // 启动 TCP 服务
+        VertxTcpServer vertxTcpServer = new VertxTcpServer();
+        vertxTcpServer.doStart(8080);
     }
 }
