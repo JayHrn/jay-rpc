@@ -4,6 +4,8 @@ import cn.hutool.core.collection.CollUtil;
 import com.jayhrn.jayrpc.RpcApplication;
 import com.jayhrn.jayrpc.config.RpcConfig;
 import com.jayhrn.jayrpc.constant.RpcConstant;
+import com.jayhrn.jayrpc.fault.retry.RetryStrategy;
+import com.jayhrn.jayrpc.fault.retry.RetryStrategyFactory;
 import com.jayhrn.jayrpc.loadbalancer.LoadBalancer;
 import com.jayhrn.jayrpc.loadbalancer.LoadBalancerFactory;
 import com.jayhrn.jayrpc.model.RpcRequest;
@@ -60,9 +62,6 @@ public class ServiceProxy implements InvocationHandler {
                 throw new RuntimeException("暂无服务地址");
             }
 
-            // 暂时先取第一个
-//            ServiceMetaInfo selectedServiceMetaInfo = serviceMetaInfoList.get(0);
-
             // 负载均衡
             LoadBalancer loadBalancer = LoadBalancerFactory.getInstance(rpcConfig.getLoadBalancer());
             // 将调用方法名（请求路径）作为负载均衡参数
@@ -72,9 +71,16 @@ public class ServiceProxy implements InvocationHandler {
             log.info("这次请求的端口 = {}", selectedServiceMetaInfo.getServicePort());
 
             // 发送 TCP 请求，使用 VertxTcpClient 封装了请求过程
-            RpcResponse rpcResponse = VertxTcpClient.doRequest(rpcRequest, selectedServiceMetaInfo);
+//            RpcResponse rpcResponse = VertxTcpClient.doRequest(rpcRequest, selectedServiceMetaInfo);
 
+            // 使用重试机制
+            RetryStrategy retryStrategy = RetryStrategyFactory.getInstance(rpcConfig.getRetryStrategy());
+
+            RpcResponse rpcResponse = retryStrategy.doRetry(() ->
+                    VertxTcpClient.doRequest(rpcRequest, selectedServiceMetaInfo)
+            );
             return rpcResponse.getData();
+
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -1,0 +1,2 @@
+no=com.jayhrn.jayrpc.fault.retry.NoRetryStrategy
+fixedInterval=com.jayhrn.jayrpc.fault.retry.FixedIntervalRetryStrategy

@@ -1,5 +1,6 @@
 package com.jayhrn.jayrpc.config;
 
+import com.jayhrn.jayrpc.fault.retry.RetryStrategyKeys;
 import com.jayhrn.jayrpc.loadbalancer.LoadBalancerKeys;
 import com.jayhrn.jayrpc.serializer.SerializerKeys;
 import lombok.Data;
@@ -46,4 +47,9 @@ public class RpcConfig {
      * 负载均衡器
      */
     private String loadBalancer = LoadBalancerKeys.ROUND_ROBIN;
+
+    /**
+     * 重试策略
+     */
+    private String retryStrategy = RetryStrategyKeys.NO;
 }
