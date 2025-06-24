@@ -1,6 +1,8 @@
 package com.jayhrn.jayrpc.server;
 
 /**
+ * HTTP 服务器接口
+ *
  * @Author JayHrn
  * @Date 2025/6/15 16:43
  * @Version 1.0

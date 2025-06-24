@@ -4,11 +4,11 @@ import java.io.Serializable;
 
 /**
  * 用户
+ * 后续需要进行网络传输需要实现Serializable
  *
  * @Author JayHrn
  * @Date 2025/6/15 16:07
  * @Version 1.0
- * 后续需要进行网络传输需要实现Serializable
  */
 public class User implements Serializable {
     private String name;

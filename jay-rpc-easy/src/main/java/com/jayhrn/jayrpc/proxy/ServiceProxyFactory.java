@@ -3,6 +3,8 @@ package com.jayhrn.jayrpc.proxy;
 import java.lang.reflect.Proxy;
 
 /**
+ * 服务代理工厂（用于创建代理对象）
+ *
  * @Author JayHrn
  * @Date 2025/6/15 18:24
  * @Version 1.0
