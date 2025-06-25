@@ -1,6 +1,7 @@
 package com.jayhrn.jayrpc.config;
 
 import com.jayhrn.jayrpc.fault.retry.RetryStrategyKeys;
+import com.jayhrn.jayrpc.fault.tolerant.TolerantStrategyKeys;
 import com.jayhrn.jayrpc.loadbalancer.LoadBalancerKeys;
 import com.jayhrn.jayrpc.serializer.SerializerKeys;
 import lombok.Data;
@@ -52,4 +53,9 @@ public class RpcConfig {
      * 重试策略
      */
     private String retryStrategy = RetryStrategyKeys.NO;
+
+    /**
+     * 容错策略
+     */
+    private String tolerantStrategy = TolerantStrategyKeys.FAIL_FAST;
 }

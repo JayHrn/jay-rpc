@@ -1,0 +1,4 @@
+failFast=com.jayhrn.jayrpc.fault.tolerant.FailFastTolerantStrategy
+failSafe=com.jayhrn.jayrpc.fault.tolerant.FailSafeTolerantStrategy
+failBack=com.jayhrn.jayrpc.fault.tolerant.FailBackTolerantStrategy
+failOver=com.jayhrn.jayrpc.fault.tolerant.FailOverTolerantStrategy

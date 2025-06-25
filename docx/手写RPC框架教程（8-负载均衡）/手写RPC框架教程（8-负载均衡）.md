@@ -466,3 +466,7 @@ public class ServiceProxy implements InvocationHandler {
 
 - 实现更多不同算法的负载均衡器
 - 自定义一致性Hash负载均衡算法中的Hash算法
+
+### RPC框架-负载均衡(注册中心)
+
+![RPC架构-注册中心负载均衡版](assets/RPC架构-注册中心负载均衡版.svg)

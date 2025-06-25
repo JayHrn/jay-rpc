@@ -1432,3 +1432,7 @@ public class VertxTcpClient {
 ### 拓展
 
 - 自己定义一个占用空间更少的RPC 协议的消息结构
+
+### RPC框架-自定义协议(注册中心)
+
+![RPC架构-注册中心自定义协议版](assets/RPC架构-注册中心自定义协议版.svg)
