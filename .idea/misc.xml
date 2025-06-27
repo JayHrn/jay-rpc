@@ -8,12 +8,21 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/jay-rpc-springboot-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/jay-rpc-springboot-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/jay-rpc-spring-boot-starter/pom.xml" />
         <option value="$PROJECT_DIR$/jay-rpc-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/jay-rpc-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/jay-rpc-common/pom.xml" />
         <option value="$PROJECT_DIR$/jay-rpc-easy/pom.xml" />
         <option value="$PROJECT_DIR$/jay-rpc-core/pom.xml" />
+        <option value="$PROJECT_DIR$/jay-rpc-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/jay-rpc-common/pom.xml" />
+        <option value="$PROJECT_DIR$/jay-rpc-test-lombok/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/jay-rpc-test-lombok/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK" />

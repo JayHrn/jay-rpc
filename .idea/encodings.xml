@@ -11,6 +11,10 @@
     <file url="file://$PROJECT_DIR$/jay-rpc-easy/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jay-rpc-provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jay-rpc-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jay-rpc-spring-boot-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jay-rpc-springboot-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jay-rpc-springboot-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jay-rpc-test-lombok/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

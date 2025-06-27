@@ -2,7 +2,7 @@ package com.jayhrn.example.consumer;
 
 import com.jayhrn.example.model.User;
 import com.jayhrn.example.service.UserService;
-import com.jayhrn.jayrpc.RpcApplication;
+import com.jayhrn.jayrpc.bootstrap.ConsumerBoostrap;
 import com.jayhrn.jayrpc.proxy.ServiceProxyFactory;
 
 /**
@@ -15,7 +15,7 @@ import com.jayhrn.jayrpc.proxy.ServiceProxyFactory;
 public class Consumer {
     public static void main(String[] args) {
         // 服务消费者初始化
-        RpcApplication.init();
+        ConsumerBoostrap.init();
         // 动态代理
         UserService userService = ServiceProxyFactory.getProxy(UserService.class);
         User user = new User();
