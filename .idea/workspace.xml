@@ -5,15 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fe69dd8-25ef-45a8-8179-3a1ef2fe1ba7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docx/手写RPC框架教程（11-启动机制和注解驱动）/手写RPC框架教程（11-启动机制和注解驱动）.md" beforeDir="false" afterPath="$PROJECT_DIR$/docx/手写RPC框架教程（11-启动机制和注解驱动）/手写RPC框架教程（11-启动机制和注解驱动）.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jay-rpc-consumer/src/main/java/com/jayhrn/example/consumer/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-consumer/src/main/java/com/jayhrn/example/consumer/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/config/RegistryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/config/RegistryConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docx/手写RPC框架教程（12-扩展思路）/手写RPC框架教程（12-扩展思路）.md" beforeDir="false" afterPath="$PROJECT_DIR$/docx/手写RPC框架教程（12-扩展思路）/手写RPC框架教程（12-扩展思路）.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/bootstrap/ProviderBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/bootstrap/ProviderBootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/config/RpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/config/RpcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/fault/retry/RetryStrategyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/fault/retry/RetryStrategyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/fault/retry/RetryStrategyKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/fault/retry/RetryStrategyKeys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/fault/tolerant/TolerantStrategyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/fault/tolerant/TolerantStrategyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/fault/tolerant/TolerantStrategyKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/fault/tolerant/TolerantStrategyKeys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/loadbalancer/LoadBalancerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/loadbalancer/LoadBalancerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/loadbalancer/LoadBalancerKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/loadbalancer/LoadBalancerKeys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/model/RpcResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/model/RpcResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/model/ServiceRegisterInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/model/ServiceRegisterInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/protocol/ProtocolConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/protocol/ProtocolConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/protocol/ProtocolMessageDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/protocol/ProtocolMessageDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/protocol/ProtocolMessageEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/protocol/ProtocolMessageEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/proxy/MockServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/proxy/MockServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/proxy/ServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/proxy/ServiceProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/proxy/ServiceProxyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/registry/LocalRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/registry/LocalRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/registry/RegistryFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/registry/RegistryFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/registry/RegistryKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/registry/RegistryKeys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/serializer/SerializerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/serializer/SerializerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/serializer/SerializerKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-core/src/main/java/com/jayhrn/jayrpc/serializer/SerializerKeys.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jay-rpc-provider/src/main/java/com/jayhrn/example/provider/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-provider/src/main/java/com/jayhrn/example/provider/Provider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-spring-boot-starter/src/main/java/com/jayhrn/jayrpc/springboot/starter/bootstrap/RpcInitBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-spring-boot-starter/src/main/java/com/jayhrn/jayrpc/springboot/starter/bootstrap/RpcInitBootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jay-rpc-spring-boot-starter/src/main/java/com/jayhrn/jayrpc/springboot/starter/bootstrap/RpcProviderBoostrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/jay-rpc-spring-boot-starter/src/main/java/com/jayhrn/jayrpc/springboot/starter/bootstrap/RpcProviderBoostrap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +40,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2z4t68yKeaGCkPaU4AXADPo0mmL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -55,13 +72,16 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/jay-rpc-test-lombok/src/main/java/com/jayhrn/jayrpc/jayrpctestlombok" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.jayhrn.example" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -148,7 +168,9 @@
       <updated>1746753865448</updated>
       <workItem from="1746753866533" duration="26000" />
       <workItem from="1747134317190" duration="399000" />
-      <workItem from="1751001995845" duration="1582000" />
+      <workItem from="1751001995845" duration="2098000" />
+      <workItem from="1751341740855" duration="383000" />
+      <workItem from="1751342132832" duration="4563000" />
     </task>
     <servers />
   </component>

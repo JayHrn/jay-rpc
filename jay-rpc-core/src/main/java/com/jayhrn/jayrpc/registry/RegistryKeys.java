@@ -8,8 +8,12 @@ package com.jayhrn.jayrpc.registry;
  * @Version 1.0
  */
 public interface RegistryKeys {
-
+    /**
+     * ETCD 注册中心
+     */
     String ETCD = "etcd";
-
+    /**
+     * Zookeeper 注册中心
+     */
     String ZOOKEEPER = "zookeeper";
 }

@@ -8,12 +8,10 @@ package com.jayhrn.jayrpc.fault.retry;
  * @Version 1.0
  */
 public interface RetryStrategyKeys {
-
     /**
      * 不重试
      */
     String NO = "no";
-
     /**
      * 固定时间间隔重试
      */

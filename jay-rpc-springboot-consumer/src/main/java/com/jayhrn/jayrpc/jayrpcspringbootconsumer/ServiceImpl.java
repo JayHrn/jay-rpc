@@ -6,6 +6,8 @@ import com.jayhrn.jayrpc.springboot.starter.annotation.JayRpcReference;
 import org.springframework.stereotype.Service;
 
 /**
+ * 示例服务实现类
+ *
  * @Author JayHrn
  * @Date 2025/6/26 14:50
  * @Version 1.0

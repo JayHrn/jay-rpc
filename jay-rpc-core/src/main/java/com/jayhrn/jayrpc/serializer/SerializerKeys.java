@@ -8,8 +8,20 @@ package com.jayhrn.jayrpc.serializer;
  * @Version 1.0
  */
 public interface SerializerKeys {
+    /**
+     * JDK 序列化键名常量
+     */
     String JDK = "jdk";
+    /**
+     * JSON 序列化键名常量
+     */
     String JSON = "json";
+    /**
+     * KRYO 序列化键名常量
+     */
     String KRYO = "kryo";
+    /**
+     * HESSIAN 序列化键名常量
+     */
     String HESSIAN = "hessian";
 }

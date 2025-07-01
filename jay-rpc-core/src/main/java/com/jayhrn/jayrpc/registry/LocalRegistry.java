@@ -40,5 +40,4 @@ public class LocalRegistry {
     public static void remove(String serviceName) {
         map.remove(serviceName);
     }
-
 }

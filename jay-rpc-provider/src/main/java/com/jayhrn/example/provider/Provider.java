@@ -24,41 +24,5 @@ public class Provider {
 
         // 服务提供者初始化
         ProviderBootstrap.init(serviceRegisterInfoList);
-
-//        // RPC 框架初始化
-//        RpcApplication.init();
-//
-//        // 注册服务，这里需要服务后来接收的请求找到对应的实现类
-//        LocalRegistry.register(UserService.class.getName(), UserServiceImpl.class);
-//
-//        // 注册服务到注册中心（服务名称就是服务接口名称）
-//        String serviceName = UserService.class.getName();
-//
-//        // 获取RPC配置信息
-//        RpcConfig rpcConfig = RpcApplication.getRpcConfig();
-//        // 获取注册中心配置信息
-//        RegistryConfig registerConfig = rpcConfig.getRegistryConfig();
-//        // 获取指定类型的注册中心
-//        Registry registry = RegistryFactory.getInstance(registerConfig.getRegistry());
-//        // 注册服务信息
-//        ServiceMetaInfo serviceMetaInfo = new ServiceMetaInfo();
-//        serviceMetaInfo.setServiceName(serviceName);
-//        serviceMetaInfo.setServiceHost(rpcConfig.getServerHost());
-//        serviceMetaInfo.setServicePort(rpcConfig.getServerPort());
-//
-//        try {
-//            // 注册服务到注册中心
-//            registry.register(serviceMetaInfo);
-//        } catch (Exception e) {
-//            throw new RuntimeException(e);
-//        }
-//
-//        // 启动 web 服务
-////        HttpServer httpServer = new VertxHttpServer();
-////        httpServer.doStart(rpcConfig.getServerPort());
-//
-//        // 启动 TCP 服务
-//        VertxTcpServer vertxTcpServer = new VertxTcpServer();
-//        vertxTcpServer.doStart(8080);
     }
 }

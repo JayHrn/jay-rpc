@@ -14,6 +14,7 @@ import java.io.IOException;
  * @Version 1.0
  */
 public class ProtocolMessageEncoder {
+
     /**
      * 编码
      *

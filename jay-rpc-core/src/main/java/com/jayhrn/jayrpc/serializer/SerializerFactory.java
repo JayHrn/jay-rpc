@@ -1,20 +1,17 @@
 package com.jayhrn.jayrpc.serializer;
 
 import com.jayhrn.jayrpc.spi.SpiLoader;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @Author JayHrn
  * @Date 2025/6/17 19:06
  * @Version 1.0
  */
+@Slf4j
 public class SerializerFactory {
-//    private static final Map<String, Serializer> KEY_SERIALIZER_MAP = new HashMap<String, Serializer>() {{
-//        put(SerializerKeys.JDK, new JdkSerializer());
-//        put(SerializerKeys.JSON, new JsonSerializer());
-//        put(SerializerKeys.KRYO, new KryoSerializer());
-//        put(SerializerKeys.HESSIAN, new HessianSerializer());
-//    }};
 
+    // SPI 动态加载
     static {
         SpiLoader.load(Serializer.class);
     }
@@ -31,7 +28,12 @@ public class SerializerFactory {
      * @return Serializer
      */
     public static Serializer getInstance(String serializerKey) {
-//        return KEY_SERIALIZER_MAP.getOrDefault(serializerKey, DEFAULT_SERIALIZER);
-        return SpiLoader.getInstance(Serializer.class, serializerKey);
+        try {
+            return SpiLoader.getInstance(Serializer.class, serializerKey);
+        } catch (RuntimeException e) {
+            // 使用默认序列化器
+            log.info("未找到对应的序列化器 key = [{}]，使用默认序列化器: {}", serializerKey, DEFAULT_SERIALIZER.getClass().getSimpleName());
+            return DEFAULT_SERIALIZER;
+        }
     }
 }

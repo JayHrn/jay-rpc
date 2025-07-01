@@ -21,6 +21,7 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
  */
 @Slf4j
 public class RpcProviderBoostrap implements BeanPostProcessor {
+
     /**
      * Bean 初始化后执行，注册服务
      * 每个 Bean 初始化后都会调用这个函数如何判断是否包含注解，包含就进行注册服务

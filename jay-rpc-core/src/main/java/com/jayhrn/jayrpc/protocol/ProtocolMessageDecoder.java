@@ -16,6 +16,14 @@ import java.io.IOException;
  * @Version 1.0
  */
 public class ProtocolMessageDecoder {
+
+    /**
+     * 解码
+     *
+     * @param buffer
+     * @return
+     * @throws IOException
+     */
     public static ProtocolMessage<?> decode(Buffer buffer) throws IOException {
         // 分别从指定位置读出 Buffer
         ProtocolMessage.Header header = new ProtocolMessage.Header();
